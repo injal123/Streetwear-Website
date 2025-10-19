@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Streetwear Hat</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
+
+</head>
+
+
+<style>
+
+.nav{
+    display: flex;
+    position: sticky;
+    top: 0px;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    border: 3px solid black;
+    align-items: center;
+    background-color: rgb(204, 29, 29);
+    
+}
+
+
+.logo{
+    margin-left: 100px;
+}
+
+
+.dress a{
+    margin-left:85px ;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+.icons a{
+    color: grey;
+    margin-right: 20px;
+    font-size: 25px;
+    justify-content: space-around;
+    cursor: pointer;
+
+}
+
+.search{
+    height: 30px;
+    width: 120px;
+    border-radius: 15px;
+    border: 1px solid black;
+    background-color: white;
+    padding: 5px;
+    margin-left: 200px;
+}
+
+input{
+   margin-top: 6px;
+   background: transparent;
+   border: 0px;
+   outline: 0px;
+   width: 100px ;
+   color: rgb(204, 29, 29) ;
+}
+
+
+
+
+
+.discount{
+    border-top: none;
+    height: 1800px;
+    border: 3px solid black;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: -190px;
+}
+
+
+.discounted{
+    justify-content: space-evenly;
+    margin-top: 150px;
+    margin-left: 130px;
+    height: 390px;
+    width: 300px;
+    border: 2px solid black;
+    float: left;
+    background-color: rgb(250, 250, 250);       
+}
+
+.discounted:hover
+{
+    box-shadow: 5px 5px 10px rgb(80, 79, 79);
+}
+
+
+.lastko{
+    border: 3px solid black;
+    height: 500px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+
+}
+
+
+
+
+.fixed{
+    height: 70px;
+    width: 70px;
+    border: 3px solid rgb(8, 8, 123);
+    border-radius: 50%;
+    position: fixed;
+    top: 75
+    0px;
+    left: 1300px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+/* =================== RESPONSIVE DESIGN =================== */
+
+/* For tablets (up to ~992px wide) */
+@media (max-width: 992px) {
+  .nav {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 10px;
+  }
+
+  .logo {
+    margin-left: 30px;
+  }
+
+  .dress a {
+    margin-left: 30px;
+    font-size: 20px;
+  }
+
+  .search {
+    margin-left: 20px;
+  }
+
+  .discount {
+    height: auto;
+  }
+
+  .discounted {
+    float: none;
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  .lastko {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 30px 0;
+  }
+
+  .lastko img {
+    margin: 20px 0;
+  }
+
+  iframe {
+    width: 90%;
+    height: 200px;
+    margin: 20px 0;
+  }
+
+  .fixed {
+    left: auto;
+    right: 20px;
+    bottom: 20px;
+    top: auto;
+  }
+}
+
+
+/* For mobile phones (up to ~600px wide) */
+@media (max-width: 600px) {
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 10px;
+  }
+
+  .logo {
+    margin: 10px 0;
+  }
+
+  .dress {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dress a {
+    margin: 8px 0;
+    font-size: 18px;
+  }
+
+  .search {
+    width: 80%;
+    margin: 10px 0;
+  }
+
+  .search input {
+    width: 70%;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .discounted {
+    width: 90%;
+    float: none;
+    margin: 20px auto;
+  }
+
+  h1, h2 {
+    font-size: 20px !important;
+    text-align: center;
+    margin: 10px;
+  }
+
+  .lastko {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  .lastko div {
+    margin: 20px 0;
+  }
+
+  iframe {
+    width: 100%;
+    height: 200px;
+  }
+
+  .fixed {
+    display: none; /* hide promo circle on small screens */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+
+
+<body>
+
+
+    
+<div class="nav">
+
+
+        <div class="logo">
+            <a href="index.html">  <img src="/photo/logo.avif" height="50px" width="250px"> </a>
+        </div>
+
+
+
+        <div class="dress">
+
+            <a href="Hat.html">Hat</a> 
+            <a href="/Jacket.html">Jacket</a>
+            <a href="Pant.html">Pants</a>
+
+        </div>
+
+        
+
+        <div class="search">
+             <input type="search" placeholder="Search...">
+             <a href="#"><i class='bx bx-search'></i></a>
+        </div>
+
+
+        <div class="icons">
+            
+           <!-- <input type="search" placeholder="Search.." style="height: 40px; border-radius: 15px;">
+           <a href="#"><i class='bx bx-search'></i></a> -->
+           <a href="#"><i class='bx bx-heart'></i></a>
+           <a href="#" ><i class='bx bx-cart'></i></a>
+           <a href="#"><i class='bx bx-user'></i></a>
+    
+        </div>   
+        
+
+
+</div> 
+
+
+
+
+
+
+
+<div class="discount">
+
+
+        <h1 style="text-align: center;  font-size: 50px; margin-top: 100px;"> Welcome to our hat section !!!</h1>
+
+            <!-- <h3> At StreetSync, we are passionate about [briefly describe your main focus or mission]. Founded in 2024, we have been dedicated to [key objectives, values, or goals].
+            
+            Our team consists of [mention the size and expertise of your team] who are committed to [core principles or services]. Whether you're [describe your target audience or customers], we strive to [highlight what sets you apart or the value you provide].
+            
+            Explore our website to discover [key features, products, or services], and feel free to [include a call-to-action, such as contacting you, signing up, or exploring specific pages].
+            
+            Thank you for being a part of our journey!  </h3> -->
+
+            <h2 style="text-align: center; line-height: 50px; margin-top: 80px;">Dive into the heartbeat of urban expression with our exclusive streetwear hats at StreetSync. Each cap is more than just an accessory; it's a testament to the unapologetic spirit of street style. From classic snapbacks that echo retro vibes to modern, bold designs pushing the boundaries, our hats are crafted for those who embrace individuality. Elevate your streetwear game with headwear that speaks volumes. Unleash your style and crown your look with attitude, only at StreetSync.</h2>
+    
+
+
+        <div class="discounted">
+
+            <a href="hat1.html">  <img style="margin-left: 10px; margin-top: 10px; cursor: pointer;" src="photo/hat3.webp" height="280px" width="280px">  </a>
+            <h style="margin-left: 70px; color: rgb(210, 9, 9); margin-left: 30px ;">BUCKET HAT TECHWEAR CROXX</h>
+            <P style="text-align: center;">  Price : $20.00</P>
+            
+        </div>
+
+
+
+       <div class="discounted">
+
+           <a href="hat2.html">  <img style="margin-left: 10px; margin-top: 10px; cursor: pointer;" src="photo/hat4.webp" height="280px" width="280px">  </a>
+           <h style="margin-left: 70px; color: rgb(210, 9, 9);">JAPANESE CAP NARUTO</h>
+           <P style="text-align: center;">  Price : $20.00</P>
+           
+      </div>
+
+
+
+       <div class="discounted">
+
+       <a href="hat3.html">  <img style="margin-left: 10px; margin-top: 10px; cursor: pointer;" src="photo/hat5.webp" height="280px" width="280px">   </a>
+       <h style=" color: rgb(204, 29, 29); margin-left: 8px; margin-left: 50px;">JAPANESE CAP SHARINGAN</h>
+       <P style="text-align: center;">  Price : $20.00</P>
+      
+       </div>
+
+
+
+        <div class="discounted">
+
+       <a href="hat4.html">   <img style="margin-left: 10px; margin-top: 10px; cursor: pointer;" src="photo/hat1.webp" height="280px" width="280px">  </a>
+       <h style="margin-left: 70px; color: rgb(204, 29, 29) ;">JAPANESE CAP SATURN</h>
+       <P style="text-align: center;">  Price :  <s>$70.00</s> $20.00</P>
+       <h1 style="margin-top: -370px; text-align: left; color: rgb(210, 9, 9);">Sale</h1>
+
+        </div>
+
+
+
+        <div class="discounted">
+
+          <a href="hat5.html">   <img style="margin-left: 10px; margin-top: 10px; cursor: pointer;" src="photo/hat6.webp" height="280px" width="280px">   </a>
+           <h style="margin-left: 30px; color: rgb(204, 29, 29) ; margin-left: 60px;">BUCKET HAT NO CHILL</h>
+           <P style="text-align: center;">  Price : $20.00</P>
+           
+          
+        </div>
+
+
+
+        <div class="discounted">
+
+         <a href="hat6.html">   <img style="margin-left: 10px; margin-top: 10px; cursor: pointer;" src="photo/cap2.webp" height="280px" width="280px">   </a>
+         <h style="margin-left: 70px; color: rgb(204, 29, 29) ;">JAPANESE CAP PEACE3</h>
+         <P style="text-align: center;">  Price :   <s>$70.00</s>   $20.00</P>
+         <h1 style="margin-top: -370px; text-align: left; color: rgb(210, 9, 9);">Sale</h1>
+      
+        </div>
+
+
+
+     
+
+
+</div>
+
+
+
+
+
+<div class="lastko">
+
+
+    <img style="margin-left: 35px; margin-top: 65px;" src="photo/logo2.avif" height="100px" width="200px" >
+
+    <div style="margin-left: 40px; margin-top: 40px;">
+        <h1 style="color: white;">INFORMATION</h1>
+        <h4 style="color: white;">About us</h4>
+        <h4 style="color: white;">Help</h4>
+        <h4 style="color: white;">Terms & Conditions </h4>
+        <a href="refund.html">  <h4 style="color: white;">Refund policy</h4>  </a>
+        <h4 style="color: white;">Contact us</h4>
+    </div>
+
+
+    <div style="margin-left: 50px; margin-top: 40px; width: 400px;">
+
+        <h1 style="color: white;">OTHER INFORMATION</h1>
+        <h2 style="color: white;">SIGN UP AND SAVE</h2>
+        <h4 style="color: white;">(Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.)</h4>
+
+        <div style="margin-top: 60px;">
+            <input type="email" placeholder="Enter your email..">
+            <i style="color: white; font-size: 30px;" class='bx bx-envelope' ></i>
+        </div>
+        
+        
+
+
+        <i style="color: white; font-size: 50px; margin-top: 50px;" class='bx bxl-pinterest'></i>
+        <a href="https://www.facebook.com/HMSS.thapa" < i style="color: white; font-size: 50px; text-decoration: none;" class='bx bxl-facebook-circle' ></i>  </a>
+        <a href="https://discord.com/channels/@me" <i style="color: white; font-size: 50px; text-decoration: none;" class='bx bxl-discord-alt'></i> </a>
+        <i style="color: white; font-size: 50px" class='bx bxl-instagram-alt' ></i>
+
+    </div>
+
+
+
+
+    <iframe style="margin-top: 70px; margin-left: 20px; border-radius: 20px;"  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3531.4448105186166!2d85.30788197526665!3d27.734423176167088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1708868574839!5m2!1sen!2snp" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   
+     <h5 style="color: white; margin-left: -400px; margin-top: 420px;">© 2024 Streetwear</h5>
+    </div>
+
+   
+
+</div>
+
+
+
+
+
+
+    <div class="fixed"><img src="/photo/hehe.jpeg" height="70px" width="70px" style=" border-radius: 50%;" </div>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
