@@ -19,7 +19,7 @@ A streetwear website developed using HTML and CSS during my first semester to pr
 2. Open `index.html` in a web browser  
 3. Explore the website layout and styles
 
-**Demo**
+**Demo:**  
 Live demo : [Try it here](https://injal123.github.io/Streetwear-Website/)
 
 **Screenshots:**  
